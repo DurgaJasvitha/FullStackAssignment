@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <style>
+    .image{
+        display:block;
+        padding-top: 50px;;
+        margin-left: auto;
+        margin-right:auto;
+        height:200px;
+        width:150px;
+    }
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        /* background-image: url(images/background_image.jpeg); */
+        background-image: linear-gradient(to right, white, rgb(207, 243, 255));
+    }
+    p, h4, h6{
+        margin-left: 10px;;
+    }
+    h1,h2{
+            text-align: center;
+            color: #333;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        .project-title {
+            font-weight: bold;
+            color: #0056b3;
+        }
+        .project-date {
+            font-style: italic;
+            color: #666;
+        }
+        div{
+            margin-left: 10px;
+        }
+   </style>
+
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="visitor_login.html">Visitor Login</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link" href="contact.html">Contact Me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    
+      <h1>Project Portfolio</h1>
+
+    <div class="project">
+        <div class="project-title">Optimizing Ad Placement: A RAG Chatbot using Web Scraping and NLP <span style="float: right; margin-right: 10px;  font-weight: 100; font-style: italic;
+            color: #666;">  Jun’24</span></div>
+        <!-- <div class="project-date">Jun’24</div> -->
+        <ul>
+
+           <li> Developed a chatbot using LangChain framework hosted on Streamlit frontend.</li> 
+           <li>Takes any product’s website on internet as input and proposes an Advertisement campaign strategy and produces an AI-generated image using Dall-E Image Generator for the campaign. </li>
+           <li>The backend is made with RAG agent developed from OpenAI LLM trained using data from Wikipedia API, a custom repository of advertisement PDFs, and internet advertisement sources. </li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <div class="project-title">Drawing View and Dimensions Extraction from Drawing file (under guidance of Honeywell)</div>
+        <div class="project-date">Apr’23-Aug’23</div>
+        <ul><li>A machine learning project which made use of Tesseract, OCR Pipeline, Keras models.</li><li> Was able to differentiate several views from an engineering drawing.</li></ul>
+    </div>
+
+    <div class="project">
+        <div class="project-title">A Full Stack Fetal Health Prediction Project</div>
+        <div class="project-date">Jun’23</div>
+        <ul><li>Made with Python ML models and Node.js in the back end, MongoDB database, HTML, CSS front end </li></ul>
+    </div>
+
+    <h2>Course Work Projects</h2>
+
+    <div class="project">
+        <div class="project-title">K-means Clustering using Hadoop Map-Reduce (Java Project)</div>
+        <ul><li>Converted newsletter into a bag of words vector and clustered them.</li></ul>
+    </div>
+
+    <div class="project">
+        <div class="project-title">A Basic Model of Search Engine Backend using PageRank Algorithm (Java)</div>
+    </div>
+
+    <div class="project">
+        <div class="project-title">Comparative Study of Text Compression Algorithms</div>
+        <ul><li>Run Length, Huffman Tree, Lempel Ziv on genetic sequences.</li></ul>
+        
+    </div>
+
+    <div class="project">
+        <div class="project-title">Line Following Robot in ROS2 (Python, Ubuntu)</div>
+    </div>
+      
+
+      <button type="button" onclick="clockback()">
+        Back to Visitor Page
+      </button>
+
+      <script>
+
+        function clockback(){
+            window.location.href = 'gallery.html';
+        }
+
+      </script>
+
+      <hr>
+
+      <footer>
+        <p>Author: Jasvitha</p>
+        <p><a href="mailto:hege@example.com">jasvitha.bommisetty1@gmail.com</a></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
